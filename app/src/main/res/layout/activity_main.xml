@@ -29,11 +29,12 @@
         android:layout_marginTop="8dp"
         android:justificationMode="inter_word"
         android:text="@string/inf_description"/>
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_to_page2"
         android:text="@string/next"
         android:layout_gravity="right"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
