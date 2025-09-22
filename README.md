@@ -7,4 +7,5 @@ Shift D - E
 Pertemuan 2 
 
 Pertemuan 3 
+
 https://youtu.be/Jy06OHFaysI
