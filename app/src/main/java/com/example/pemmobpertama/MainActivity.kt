@@ -1,4 +1,4 @@
-package com.example.pemobpertama
+package com.example.pemmobpertama
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.pemobpertama.databinding.ActivityMainBinding
+import com.example.pemmobpertama.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
