@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pemmobpertama"
+    namespace = "com.example.prakpemobpert1"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.pemmobpertama"
+        applicationId = "com.example.prakpemobpert1"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {      // ✅ ganti pakai ini
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -42,6 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
