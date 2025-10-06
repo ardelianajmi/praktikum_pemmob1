@@ -1,4 +1,4 @@
-Adelia Najmi Raissa
+![Tugas 4 Pertemuan 5](https://github.com/user-attachments/assets/10ee4db7-7e31-4a30-b8ba-5e238b87486c)Adelia Najmi Raissa
 
 H1D023007
 
@@ -20,3 +20,7 @@ Tampilan Pertemuan 4
 <img width="1280" height="719" alt="image" src="https://github.com/user-attachments/assets/b72e4895-afae-4e03-a86f-4a692030a612" />
 
 ![Untitled video - Made with Clipchamp (2)](https://github.com/user-attachments/assets/96dfee1d-f231-41df-b6c0-2dd61291f516)
+
+Tampilan Pertemuan 5
+![Tugas 4 Pertemuan 5](https://github.com/user-attachments/assets/b521c072-3eb3-42f3-ae99-4a9a1cc8c85d)
+
