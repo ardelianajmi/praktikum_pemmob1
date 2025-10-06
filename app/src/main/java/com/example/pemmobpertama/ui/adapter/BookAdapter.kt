@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.pemmobpertama.data.model.BookDoc
 import com.example.pemmobpertama.databinding.ListBukuBinding
 
-class BookAdapter(private var books: List<BookDoc>) :
-    RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
+class BookAdapter(
+    private var books: List<BookDoc>,
+    private val onBookClickListener: OnBookClickListener
+) : RecyclerView.Adapter<BookAdapter.BookViewHolder>() {
 
     inner class BookViewHolder(val binding: ListBukuBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -27,16 +29,21 @@ class BookAdapter(private var books: List<BookDoc>) :
         val book = books[position]
 
         holder.binding.tvTitle.text = book.title ?: "No Title"
+        holder.binding.tvAuthor.text = book.authorName?.joinToString(", ") ?: "Unknown Author"
+        holder.binding.tvYear.text = book.firstPublishYear?.toString() ?: "-"
 
-        holder.binding.tvAuthor.text =
-            book.authorName?.joinToString(", ") ?: "Unknown Author"
 
-        holder.binding.tvYear.text =
-            book.firstPublishYear?.toString() ?: "-"
+        holder.binding.root.setOnClickListener {
+            onBookClickListener.onBookClick(book)
+        }
     }
 
     fun setData(newBooks: List<BookDoc>) {
         books = newBooks
         notifyDataSetChanged()
+    }
+
+    interface OnBookClickListener {
+        fun onBookClick(book: BookDoc)
     }
 }

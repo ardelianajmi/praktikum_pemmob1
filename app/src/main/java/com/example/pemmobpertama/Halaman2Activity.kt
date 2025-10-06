@@ -37,6 +37,11 @@ class Halaman2Activity : AppCompatActivity() {
 
         binding.layoutPhone.imgIcon.setImageResource(R.drawable.ic_phone)
         binding.layoutPhone.tvLayout.setText(R.string.telepon)
+
+        binding.layoutBuku.let {
+            it.img.setImageResource(R.drawable.ic_book)
+            it.tvLayout.setText(R.string.koleksi_buku)
+        }
     }
 
     private fun initListener() {
@@ -52,6 +57,10 @@ class Halaman2Activity : AppCompatActivity() {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = getString(R.string.ig_himpunan).toUri()
             startActivity(intent)
+        }
+
+        binding.layoutBuku.root.setOnClickListener {
+            startActivity(Intent(this, DaftarBukuActivity::class.java))
         }
 
         // kirim email

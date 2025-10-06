@@ -10,6 +10,7 @@ import com.example.pemmobpertama.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         initNavigation()
     }
+
 
     private fun initNavigation() {
         binding.btnToPage2.setOnClickListener {
